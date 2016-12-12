@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<span id="vip">vip进入</span>
+		<span>普通用户登录</span>
+		
+		<script src='js/jquery-1.10.1.min.js'></script>
+		<script>
+			$('span').mouseover(function(){
+				if($(this).attr('id')) {
+					$(this).wrap('<a href="javascript:;"></a>')
+				}
+			});
+		</script>
+	</body>
+</html>

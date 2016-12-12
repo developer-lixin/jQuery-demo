@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div {
+				width: 50px;
+				height: 50px;
+				float: left;
+				margin: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		
+		<script src="js/jquery-1.10.1.min.js"></script>
+		<script>
+			var arr = ['red','greenyellow','blue'];
+			
+			$('div').each(function(i,e){
+				if(i>4) {
+					return false;
+				}
+				alert(i)
+			});
+		</script>
+	</body>
+</html>

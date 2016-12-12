@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.active{
+				background: yellow;
+			}
+			#box div{
+				width:200px;
+				height: 200px;
+				border: 1px solid #000;
+			}
+			#box div.hide{
+				display: none;
+			}
+			#box div.show{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<div class="show">111111</div>
+			<div class="hide">22222</div>
+			<div class="hide">33333</div>
+			<input type="button" name="" id="" value="选项一" class="active"/>
+			<input type="button" name="" id="" value="选项二" />
+			<input type="button" name="" id="" value="选项三" />
+		</div>
+		 <script src="js/jquery-1.10.1.min.js"></script>
+		 <script>
+		 	$('input').click(function(){
+		 		$('input').removeClass('active');
+		 		$('#box div').removeClass("show").addClass('hide');
+		 		$(this).addClass('active');
+		 		$('#box div').eq($(this).index('input')).addClass('show');
+		 	});
+		 </script>
+	</body>
+</html>

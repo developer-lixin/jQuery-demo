@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div {
+				width: 60px;
+				height: 60px;
+				background: red;
+				margin: 10px;
+			}
+		</style>
+		<script src="js/jquery-1.10.1.min.js"></script>
+		<script>
+		window.onload = function(){
+			$('div').click(function(){
+				alert($(this).index())
+			});
+		};
+			
+		</script>
+	</head>
+	<body>
+		<section>
+			<div>1234</div>
+		</section>
+		<nav>
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+		</nav>
+	</body>
+</html>
